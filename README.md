@@ -1,120 +1,72 @@
-Receipt Management System
-The Receipt Management System is a powerful, user-friendly platform for managing receipts, generating detailed reports, and visualizing sales data. Built with a modern tech stack, it offers a seamless experience for admins to track transactions, export reports, and gain insights into business performance.
+🧾 Receipt Management System
+The Receipt Management System is a comprehensive platform designed for efficient receipt management, report generation, and sales data visualization. Built with a modern tech stack, it provides admins with a user-friendly interface to track transactions, export reports, and gain insights into business performance.
 
 📋 Features
-1. Admin Dashboard
-Login:
-Secure admin login interface to protect access to the system.
-Receipt Generation:
-Admins can manually enter or paste receipt details, including customer name, amount, date, and services/items.
-The system generates an electronic receipt with a unique receipt number and all entered details.
-Export Options: Allows exporting the receipt as a PDF with options to email or print it.
-2. Reports System
-Receipt Tracking:
-View all previously generated receipts in a tabular format with options to filter by date, customer name, and amount.
-Export Reports:
-Generate and export reports in CSV or Excel format with filters for:
-Date range (daily, weekly, monthly).
-Total sales.
-Customer-wise breakdown.
-Receipt Search:
-Quick search functionality to locate specific receipts instantly.
-3. Chart Visualization (Last Six Months)
-Visual Data Representation:
-Dashboard section with interactive charts to display sales data trends over the last six months.
-Charts:
-Monthly Sales Total: Line or bar chart representing monthly sales totals.
-Payment Methods Breakdown: Pie or donut chart categorizing receipts by payment method (cash, card, etc.).
-Customer Segmentation: Bar chart showing top customers based on the number of receipts generated.
-Built using libraries like Chart.js or Recharts for smooth, responsive visualizations.
-4. Receipt Template Customization
-Customizable receipt layout to include company logo, address, and contact details.
-5. Receipt Management
-Edit/Delete Receipts:
-Admins can view, edit, or delete any previously generated receipts.
-Archiving:
-Option to archive old receipts for long-term storage and easy retrieval.
+Admin Dashboard
+Secure login interface to protect access to the system.
+Admins can manually enter receipt details, including customer name, amount, date, and items/services.
+Generates an electronic receipt with a unique number. Options to export as PDF, email, or print.
+Reports System
+View all generated receipts with filters (date, customer name, amount).
+Export reports in CSV or Excel format, filtered by date range (daily, weekly, monthly), total sales, and customer breakdown.
+Quick search functionality to locate specific receipts.
+Chart Visualization (Last Six Months)
+Interactive charts showing sales trends using Chart.js or Recharts.
+Line/bar chart for monthly sales totals.
+Pie chart for payment methods breakdown (cash, card, etc.).
+Bar chart for customer segmentation based on receipt counts.
+Receipt Template Customization
+Customizable receipt layout with company logo, address, and contact details.
+Receipt Management
+Admins can edit or delete receipts.
+Option to archive old receipts for long-term storage.
 🛠️ Technology Stack
-Frontend
-React.js: For building a responsive, dynamic admin dashboard.
-Chakra UI or Material UI (MUI): For consistent and modern UI components.
-Chart.js or Recharts: For interactive chart visualizations.
-Backend
-Node.js: For server-side handling, including receipt generation, data storage, and report processing.
-MySQL: For managing data storage of receipts and reports.
-PDF Generation
-pdf-lib (Node.js): For creating PDF versions of receipts with a customizable format.
+Frontend:
+
+React.js for a responsive dashboard.
+Chakra UI or Material UI (MUI) for modern UI components.
+Chart.js or Recharts for data visualizations.
+Backend:
+
+Node.js for server-side processing.
+MySQL for data storage.
+PDF Generation:
+
+pdf-lib for creating PDF versions of receipts.
 🚀 Process Workflow
-Admin Logs In:
 Admin logs into the dashboard using secure credentials.
-Enter Receipt Data:
-Admin inputs receipt details using a user-friendly form.
-Generate Receipt:
-The system processes the data and generates an electronic receipt.
-Options to export as PDF, email, or print are provided.
-View Receipts:
-Admin can track all generated receipts in a list view and apply filters for better visibility.
-Chart Visualization:
-Admin views interactive charts for data insights, including sales trends and customer segmentation.
-Download/Print Reports:
-Admin generates detailed reports and exports them as CSV or Excel for bookkeeping and analysis.
+Admin inputs receipt details in a user-friendly form.
+System generates an electronic receipt, offering export options (PDF, email, print).
+Admin can view all receipts with filter options.
+Admin views interactive charts for insights on sales trends and customer segmentation.
+Admin can download or print detailed reports (CSV/Excel).
 📈 Visual Representation
-Line/Bar Charts:
-Show sales totals over the past six months, allowing easy trend analysis.
-Pie Charts:
-Display a breakdown of receipts by payment method (cash, card, etc.).
-Bar Charts:
-Visualize customer segmentation based on the number of receipts generated.
+Line/Bar charts for monthly sales trends.
+Pie charts for payment methods breakdown.
+Bar charts for customer segmentation.
 🛡️ Security Features
-Secure login and session management for admin access.
+Secure login and session management.
 Input validation and sanitization to prevent SQL injection.
-Role-based access control ensuring only authorized actions are allowed.
+Role-based access control.
 ⚙️ Installation Guide
-Prerequisites
-Node.js and npm installed on your system.
+Prerequisites:
+
+Node.js and npm installed.
 MySQL database setup.
-Backend Setup
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/receipt-management-system.git
-Navigate to the backend folder and install dependencies:
-bash
-Copy code
-cd backend
-npm install
+Backend Setup:
+
+Clone the repository: git clone https://github.com/yourusername/receipt-management-system.git
+Navigate to the backend folder: cd backend
+Install dependencies: npm install
 Set up the database:
-Create a new MySQL database (e.g., receipts_db).
-Import the receipts_db.sql file located in the database/ folder.
+Create a MySQL database (e.g., receipts_db).
+Import the receipts_db.sql file from the database/ folder.
 Update the .env file with your database credentials:
-env
-Copy code
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=receipts_db
-Start the backend server:
-bash
-Copy code
-npm start
-Frontend Setup
-Navigate to the frontend folder:
 
-bash
-Copy code
-cd frontend
-Install dependencies:
+Start the backend server: npm start
+Frontend Setup:
 
-bash
-Copy code
-npm install
-Start the React development server:
-
-bash
-Copy code
-npm start
-Open the application in your browser at:
-
-arduino
-Copy code
-http://localhost:3000
+Navigate to the frontend folder: cd frontend
+Install dependencies: npm install
+Start the React development server: npm start
+Open the app in your browser at: http://localhost:3000
